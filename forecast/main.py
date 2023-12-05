@@ -53,7 +53,7 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
     provider = "SCIP"
     solver = pywraplp.Solver.CreateSolver(provider)
 
-    big = 10**6 # solver.biginity() fails on arm64
+    big = 10**6 # solver.infinity() fails on arm64
 
     demands = input_data["demands"]
     for i in demands:
