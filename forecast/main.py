@@ -53,7 +53,7 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
     provider = "SCIP"
     solver = pywraplp.Solver.CreateSolver(provider)
 
-    inf = 10**6 # solver.infinity() fails on arm64
+    big = 10**6 # solver.biginity() fails on arm64
 
     demands = input_data["demands"]
     for i in demands:
@@ -62,14 +62,14 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
     block_vars = {}
     for block in BLOCKS:
         block_vars[block] = {
-            "offset": solver.NumVar(-inf, inf, f"{block}[offset]"),
-            "daily": solver.NumVar(-inf, inf, f"{block}[daily]"),
-            "seasonal_cos": solver.NumVar(-inf, inf, f"{block}[seasonal_cos"),
-            "seasonal_sin": solver.NumVar(-inf, inf, f"{block}[seasonal_sin"),
-            "solar_cos": solver.NumVar(-inf, inf, f"{block}[solar_cos"),
-            "solar_sin": solver.NumVar(-inf, inf, f"{block}[solar_sin"),
-            "weekly_cos": solver.NumVar(-inf, inf, f"{block}[weekly_cos"),
-            "weekly_sin": solver.NumVar(-inf, inf, f"{block}[weekly_sin"),
+            "offset": solver.NumVar(-big, big, f"{block}[offset]"),
+            "daily": solver.NumVar(-big, big, f"{block}[daily]"),
+            "seasonal_cos": solver.NumVar(-big, big, f"{block}[seasonal_cos"),
+            "seasonal_sin": solver.NumVar(-big, big, f"{block}[seasonal_sin"),
+            "solar_cos": solver.NumVar(-big, big, f"{block}[solar_cos"),
+            "solar_sin": solver.NumVar(-big, big, f"{block}[solar_sin"),
+            "weekly_cos": solver.NumVar(-big, big, f"{block}[weekly_cos"),
+            "weekly_sin": solver.NumVar(-big, big, f"{block}[weekly_sin"),
         }
 
     fittings = []
@@ -77,8 +77,8 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
     for i, (_, group) in enumerate(groupby(demands, itemgetter("date"))):
         for g in group:
             subscript = f"[{i}][{g['block']}]"
-            fitted = solver.NumVar(-inf, inf, f"fitted{subscript}")
-            residual = solver.NumVar(0, inf, f"residual{subscript}")
+            fitted = solver.NumVar(-big, big, f"fitted{subscript}")
+            residual = solver.NumVar(0, big, f"residual{subscript}")
 
             fittings.append(fitted)
             residuals.append(residual)
