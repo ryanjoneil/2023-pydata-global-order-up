@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-from datetime import datetime, timedelta
+from datetime import timedelta
 from dateutil.parser import parse
-from itertools import groupby
-from operator import itemgetter
 from ortools.linear_solver import pywraplp
 from typing import Any, Dict
 import argparse
 import json
-import math
 import sys
+
 
 STATUS = {
     pywraplp.Solver.FEASIBLE: "suboptimal",
@@ -19,35 +17,14 @@ STATUS = {
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Solve scheduling model.")
-    parser.add_argument(
-        "-input",
-        default="",
-        help="Path to input file. Default is stdin.",
-    )
-    parser.add_argument(
-        "-output",
-        default="",
-        help="Path to output file. Default is stdout.",
-    )
-    parser.add_argument(
-        "-duration",
-        default=30,
-        help="Max runtime duration (in seconds). Default is 30.",
-        type=int,
-    )
-    args = parser.parse_args()
-
-    input_data = read_input(args.input)
-    solution = solve(input_data)
-    write_output(args.output, solution)
+    input_data = json.load(sys.stdin)
+    output = solve(input_data)
+    print(json.dumps(output, indent=2))
 
 
 def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
     provider = "SCIP"
     solver = pywraplp.Solver.CreateSolver(provider)
-
-    big = 10**6 # solver.infinity() fails on arm64
 
     # shifts[w] = 1 if worker w's shift is assigned
     shifts = []
@@ -133,36 +110,6 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
             "schema": "v1",
         },
     }
-
-
-def log(message: str) -> None:
-    """Logs a message. We need to use stderr since stdout is used for the solution."""
-
-    print(message, file=sys.stderr)
-
-
-def read_input(input_path) -> Dict[str, Any]:
-    """Reads the input from stdin or a given input file."""
-
-    input_file = {}
-    if input_path:
-        with open(input_path, "r", encoding="utf-8") as file:
-            input_file = json.load(file)
-    else:
-        input_file = json.load(sys.stdin)
-
-    return input_file
-
-
-def write_output(output_path, output) -> None:
-    """Writes the output to stdout or a given output file."""
-
-    content = json.dumps(output, indent=2)
-    if output_path:
-        with open(output_path, "w", encoding="utf-8") as file:
-            file.write(content + "\n")
-    else:
-        print(content)
 
 
 if __name__ == "__main__":
