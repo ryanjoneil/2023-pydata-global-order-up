@@ -4,7 +4,6 @@ from itertools import groupby
 from operator import itemgetter
 from ortools.linear_solver import pywraplp
 from typing import Any, Dict
-import argparse
 import json
 import math
 import sys
@@ -15,13 +14,13 @@ HOURS = {
     "morning": "09:00",
     "midday": "13:00",
     "evening": "17:00",
-    "night": "21:00",
+    "night": "21:00"
 }
 STATUS = {
     pywraplp.Solver.FEASIBLE: "suboptimal",
     pywraplp.Solver.INFEASIBLE: "infeasible",
     pywraplp.Solver.OPTIMAL: "optimal",
-    pywraplp.Solver.UNBOUNDED: "unbounded",
+    pywraplp.Solver.UNBOUNDED: "unbounded"
 }
 
 
@@ -51,7 +50,7 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
             "solar_cos": solver.NumVar(-big, big, f"{block}[solar_cos"),
             "solar_sin": solver.NumVar(-big, big, f"{block}[solar_sin"),
             "weekly_cos": solver.NumVar(-big, big, f"{block}[weekly_cos"),
-            "weekly_sin": solver.NumVar(-big, big, f"{block}[weekly_sin"),
+            "weekly_sin": solver.NumVar(-big, big, f"{block}[weekly_sin")
         }
 
     fittings = []
@@ -113,7 +112,7 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
                     "when": f"{date.strftime('%Y-%m-%d')} {HOURS[block]}",
                     "date": date.strftime("%Y-%m-%d"),
                     "block": block,
-                    "forecast": y,
+                    "forecast": y
                 }
             )
         date += timedelta(days=1)
@@ -126,16 +125,16 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
                     "constraints": solver.NumConstraints(),
                     "provider": provider,
                     "status": STATUS.get(status, "unknown"),
-                    "variables": solver.NumVariables(),
+                    "variables": solver.NumVariables()
                 },
                 "duration": solver.WallTime() / 1000,
-                "value": solver.Objective().Value(),
+                "value": solver.Objective().Value()
             },
             "run": {
-                "duration": solver.WallTime() / 1000,
+                "duration": solver.WallTime() / 1000
             },
-            "schema": "v1",
-        },
+            "schema": "v1"
+        }
     }
 
 

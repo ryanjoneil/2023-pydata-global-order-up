@@ -3,7 +3,6 @@ from datetime import timedelta
 from dateutil.parser import parse
 from ortools.linear_solver import pywraplp
 from typing import Any, Dict
-import argparse
 import json
 import sys
 
