@@ -112,6 +112,7 @@ def solve(input_data: Dict[str, Any]) -> Dict[str, Any]:
                 "assigned_shifts": assigned_shifts,
                 "number_assigned_workers": len(assigned_shifts),
                 "demand": [s["demand"] for s in supply],
+                "hour": [s["hour"] for s in supply],
                 "supply": [int(s["var"].solution_value()) for s in supply]
             }
         ],
