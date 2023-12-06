@@ -1,0 +1,678 @@
+{
+  "penalties": {
+    "oversupply": 1,
+    "undersupply": 1.5
+  },
+  "workers": [
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T12:00:00-05:00",
+          "end": "2023-12-23T18:59:00-05:00"
+        }
+      ],
+      "id": "gregarious-hippopotamus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T15:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "ebullient-sloth"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T11:59:00-05:00"
+        }
+      ],
+      "id": "supercilious-alpaca"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T17:00:00-05:00",
+          "end": "2023-12-23T21:59:00-05:00"
+        }
+      ],
+      "id": "gregarious-giraffe"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T15:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "lachrymose-toucan"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T14:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "vainglorious-otter"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T10:59:00-05:00"
+        }
+      ],
+      "id": "enigmatic-capuchin-monkey"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "querulous-manatee"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T12:00:00-05:00",
+          "end": "2023-12-23T16:59:00-05:00"
+        }
+      ],
+      "id": "dapper-axolotl"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T09:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "nebulous-koala"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T12:00:00-05:00",
+          "end": "2023-12-23T12:59:00-05:00"
+        }
+      ],
+      "id": "vivacious-aardvark"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T14:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "frivolous-alpaca"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T09:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "aberrant-alpaca"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "querulous-meerkat"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T16:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "rambunctious-capuchin-monkey"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T18:59:00-05:00"
+        }
+      ],
+      "id": "munificent-armadillo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T20:59:00-05:00"
+        }
+      ],
+      "id": "bucolic-narwhal"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T16:00:00-05:00",
+          "end": "2023-12-23T21:59:00-05:00"
+        }
+      ],
+      "id": "supercilious-aardvark"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T14:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "quixotic-kangaroo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T10:59:00-05:00"
+        }
+      ],
+      "id": "bombastic-walrus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T19:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "bucolic-naked-mole-rat"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T16:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "loquacious-quokka"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T16:59:00-05:00"
+        }
+      ],
+      "id": "recalcitrant-flamingo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T15:59:00-05:00"
+        }
+      ],
+      "id": "gibbous-naked-mole-rat"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T09:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "quixotic-peacock"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T17:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "hapless-ostrich"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T18:59:00-05:00"
+        }
+      ],
+      "id": "bucolic-sloth"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T19:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "dapper-sea-otter"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T17:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "supercilious-pangolin"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T09:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "mellifluous-otter"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T16:59:00-05:00"
+        }
+      ],
+      "id": "astonishing-fennec-fox"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T14:59:00-05:00"
+        }
+      ],
+      "id": "ebullient-platypus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "astonishing-red-panda"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T14:59:00-05:00"
+        }
+      ],
+      "id": "zany-platypus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "kaleidoscopic-peacock"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T14:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "ebullient-kangaroo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "recalcitrant-penguin"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T13:00:00-05:00",
+          "end": "2023-12-23T20:59:00-05:00"
+        }
+      ],
+      "id": "jocular-bush-baby"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T11:59:00-05:00"
+        }
+      ],
+      "id": "enigmatic-axolotl"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T15:59:00-05:00"
+        }
+      ],
+      "id": "ebullient-naked-mole-rat"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T17:00:00-05:00",
+          "end": "2023-12-23T18:59:00-05:00"
+        }
+      ],
+      "id": "rambunctious-flamingo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T20:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "lachrymose-hippopotamus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T16:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "zealous-naked-mole-rat"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T22:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "vainglorious-hippopotamus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "pernicious-flying-squirrel"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T20:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "jocular-flamingo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T13:00:00-05:00",
+          "end": "2023-12-23T14:59:00-05:00"
+        }
+      ],
+      "id": "beneficent-porcupine"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "effervescent-aardvark"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T17:00:00-05:00",
+          "end": "2023-12-23T20:59:00-05:00"
+        }
+      ],
+      "id": "ineffable-proboscis-monkey"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T09:00:00-05:00",
+          "end": "2023-12-23T18:59:00-05:00"
+        }
+      ],
+      "id": "dapper-koala"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "ubiquitous-armadillo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T10:59:00-05:00"
+        }
+      ],
+      "id": "bombastic-blobfish"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T18:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "cryptic-tapir"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T13:00:00-05:00",
+          "end": "2023-12-23T21:59:00-05:00"
+        }
+      ],
+      "id": "wanderlust-narwhal"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T13:00:00-05:00",
+          "end": "2023-12-23T20:59:00-05:00"
+        }
+      ],
+      "id": "ineffable-tarsier"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T12:00:00-05:00",
+          "end": "2023-12-23T16:59:00-05:00"
+        }
+      ],
+      "id": "recalcitrant-armadillo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T15:59:00-05:00"
+        }
+      ],
+      "id": "beneficent-red-panda"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T13:00:00-05:00",
+          "end": "2023-12-23T20:59:00-05:00"
+        }
+      ],
+      "id": "supercilious-kakapo"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T16:00:00-05:00",
+          "end": "2023-12-23T19:59:00-05:00"
+        }
+      ],
+      "id": "xenophilic-tapir"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T15:59:00-05:00"
+        }
+      ],
+      "id": "cryptic-hedgehog"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T12:00:00-05:00",
+          "end": "2023-12-23T21:59:00-05:00"
+        }
+      ],
+      "id": "rambunctious-walrus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T11:00:00-05:00",
+          "end": "2023-12-23T14:59:00-05:00"
+        }
+      ],
+      "id": "zany-sugar-glider"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T08:00:00-05:00",
+          "end": "2023-12-23T11:59:00-05:00"
+        }
+      ],
+      "id": "querulous-blobfish"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T08:59:00-05:00"
+        }
+      ],
+      "id": "aberrant-bush-baby"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T21:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "farcical-tapir"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T14:00:00-05:00",
+          "end": "2023-12-23T17:59:00-05:00"
+        }
+      ],
+      "id": "zealous-dik-dik"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T09:00:00-05:00",
+          "end": "2023-12-23T15:59:00-05:00"
+        }
+      ],
+      "id": "beneficent-platypus"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T15:59:00-05:00"
+        }
+      ],
+      "id": "bucolic-chameleon"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T21:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "ghastly-koala"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T12:00:00-05:00",
+          "end": "2023-12-23T23:59:00-05:00"
+        }
+      ],
+      "id": "whimsical-wombat"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T10:00:00-05:00",
+          "end": "2023-12-23T22:59:00-05:00"
+        }
+      ],
+      "id": "cantankerous-tapir"
+    },
+    {
+      "availability": [
+        {
+          "start": "2023-12-23T07:00:00-05:00",
+          "end": "2023-12-23T09:59:00-05:00"
+        }
+      ],
+      "id": "wanderlust-chinchilla"
+    }
+  ],
+  "required_workers": [
+    {
+      "start": "2023-12-23T07:00:00-05:00",
+      "end": "2023-12-23T10:59:00-05:00",
+      "count": 13
+    },
+    {
+      "start": "2023-12-23T11:00:00-05:00",
+      "end": "2023-12-23T14:59:00-05:00",
+      "count": 32
+    },
+    {
+      "start": "2023-12-23T15:00:00-05:00",
+      "end": "2023-12-23T18:59:00-05:00",
+      "count": 46
+    },
+    {
+      "start": "2023-12-23T19:00:00-05:00",
+      "end": "2023-12-23T22:59:00-05:00",
+      "count": 18
+    }
+  ]
+}
